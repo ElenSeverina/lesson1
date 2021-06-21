@@ -4,34 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Need a flexible recruiting</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="header__logo">
-            <h1>
-                <img src="./assets/logo/desktop-logo-img.png" alt="Icon" class="header__logo_img">
-            </h1>
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <h1>
+                        <img src="./assets/logo/desktop-logo-img.png" alt="Icon" class="header__logo_img">
+                    </h1>
+                </div>
+                <nav class="header__nav" >
+                    <ul class="header__nav_list">
+                        <li class="header__nav_list_item">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="header__nav_list_item">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="header__nav_list_item">
+                            <a href="#">Success Stories</a>
+                        </li>
+                        <li class="header__nav_list_item">
+                            <a href="#">Join Us</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn--outlined">Schedule A Call</a>
+                </nav>
+            </div>
         </div>
-        <nav class="header__nav">
-            <ul class="header__nav_list">
-                <li class="header__nav_list_item">
-                    <a href="#">About</a>
-                </li>
-                <li class="header__nav_list_item">
-                    <a href="#">Services</a>
-                </li>
-                <li class="header__nav_list_item">
-                    <a href="#">Success Stories</a>
-                </li>
-                <li class="header__nav_list_item">
-                    <a href="#">Join Us</a>
-                </li>
-            </ul>
-        </nav>
-        <a href="#" class="btn btn--outlined">Schedule A Call</a>
     </header>
     <main>
         <section class="main-section">
@@ -42,86 +49,75 @@
                             <h2>Need a flexible recruiting solution as you sell and scale projects?</h2>
                             <span class="section-subtitle">We are here to solve this exact challenge</span>
                         </div>
-                        <a href="#" class="btn">Get started</a>
-                        <div class="main-content__img_group">
-                            <img src="./assets/main-content/main-content-image.png" alt="Flexible Recruiting Solution">
-                            <img src="./assets/main-content/main-content-achievements.png" alt="Awards/Achievements">
-                        </div>
+                        <a href="#" class="btn btn--contained">Get started</a>
+                    </div>
+                    <div class="main-content__img">
+                        <img src="./assets/main-content/main-content-image.png" alt="Flexible Recruiting Solution">
                     </div>
                 </div>
+            </div>
+            <div class="bottom-banner">
+                <img src="./assets/main-content/main-content-achievements.png" alt="Awards/Achievements">
             </div>
         </section>
 
         <section class="our-services">
             <div class="container">
-                <div class="our-services__text">
                     <div class="our-services__title">
                         <h3>Our Services</h3>
                         <span class="section-subtitle">Early stage company? Eligible applicants get all of our products for just $49 a month.</span>
                     </div>
-                    <div class="our-services-content__img">
-                        <img src="./assets/main-content/our-services-left.png" alt="Our Services">
-                    </div>
-                    <span class="our-services__text">Sourcing and engaging passive complex roles in tight labor market, such as</span>
-                    <nav class="our-services__nav">
-                        <ul class="our-services__nav_list">
-                            <li class="our-services__nav_list_item">Software Engineers</li>
-                            <li class="our-services__nav_list_item">UX Designers</li>
-                            <li class="our-services__nav_list_item">Project Managers</li>
-                        </ul>
-                    </nav>
-                    <div class="our-services__content_btn">
-                        <a href="#" class="btn">Read More</a>
-                    </div>
-
-                    <div class="our-services-content__img">
-                        <img src="./assets/main-content/our-services-right.png" alt="Our Services">
-                    </div>
-                    <span class="our-services__text">Vetting through roles with a higher volume of candidates and building a shortlist:</span>
-                    <nav class="our-services__nav">
-                        <ul class="our-services__nav_list">
-                            <li class="our-services__nav_list_item">HR and Recruitment</li>
-                            <li class="our-services__nav_list_item">Marketing</li>
-                            <li class="our-services__nav_list_item">Inside and Outside Sales</li>
-                        </ul>
-                    </nav>
-                    <div class="our-services__content_btn">
-                        <a href="#" class="btn">Read More</a>
+                    <div class="our-services__cards">
+                        <div class="our-services__card">
+                            <div class="our-services-content__img">
+                                <img src="./assets/main-content/our-services-left.png" alt="Our Services">
+                            </div>
+                        <div class="our-services__content_wrapper">
+                            <span class="our-services__text">Sourcing and engaging passive complex roles in tight labor market, such as</span>
+                            <div class="our-services__nav">
+                                <ul class="our-services__nav_list">
+                                    <li class="our-services__nav_list_item">Software Engineers</li>
+                                    <li class="our-services__nav_list_item">UX Designers</li>
+                                    <li class="our-services__nav_list_item">Project Managers</li>
+                                </ul>
+                            </div>
+                            <div class="our-services__content_btn">
+                                <a href="#" class="btn btn--contained">Read More</a>
+                            </div>
+                        </div>
+                        </div>    
+                        <div class="our-services__card">
+                            <div class="our-services-content__img">
+                                <img src="./assets/main-content/our-services-right.png" alt="Our Services">
+                            </div>
+                            <div class="our-services__content_wrapper">
+                                <span class="our-services__text">Vetting through roles with a higher volume of candidates and building a shortlist:</span>
+                                <nav class="our-services__nav">
+                                    <ul class="our-services__nav_list">
+                                        <li class="our-services__nav_list_item">HR and Recruitment</li>
+                                        <li class="our-services__nav_list_item">Marketing</li>
+                                        <li class="our-services__nav_list_item">Inside and Outside Sales</li>
+                                    </ul>
+                                </nav>
+                                <div class="our-services__content_btn">
+                                    <a href="#" class="btn btn--contained">Read More</a>
+                                </div>
+                           </div>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <section class="our-procress">
             <div class="container">
-                <div class="our-procress__text">
-                    <div class="our-procress__title">
-                        <h3>Our Procress</h3>
-                    </div>
+                <div class="our-procress__title">
+                    <h3>Our Procress</h3>
                     <span class="our-procres__subtitle">Typically, a customer starts with one recruiter as a test and ramps up as we prove success</span>
-                    <div class="our-procress__img_group">
-                        <img src="./assets/main-content/our-procress-group.png" alt="process/working time/trustworthy">
-                        <img src="./assets/main-content/purple-color.png" alt="purple">
-                        <img src="./assets/main-content/blue-color.png" alt="blue">
-                        <img src="./assets/main-content/purple-color.png" alt="purple">
-                    </div>
-                    <div class="our-procress__subtitle">
-                        <h4>Understand Requirements</h4>
-                    </div>
-                    <span class="our-procres__text_under_subtitle">Starting with 1 recruiter and scaling from there, collect requirements for job requirements and learn about client’s
-                        process needs. If the process is not present, create a process suitable to their needs.</span>
-                    <div class="our-procress__subtitle">
-                        <h4>Start Recruitment</h4>
-                    </div>
-                    <span class="our-procres__text_under_subtitle">We take over the process and help the client to schedule, select and onboard candidates, and require intervention only
-                        when needed, like for taking interviews. As we fill in positions, we scale down gradually according to the timeline prescribed by the client.</span>
-                    <div class="our-procress__subtitle">
-                        <h4>Flexible Engagement</h4>
-                    </div>
-                    <span class="our-procres__text_under_subtitle">As the client needs changes, we can add or reduce the team and provide pro-rata based support through out.
-                        We also help consulting the creation of timeline of future projects to the client.</span>
                 </div>
-            </div>
+                <div class="our-procres__banner">
+                    <img src="./assets//main-content/procress.jpg" alt="">
+                </div>
+            </div>       
         </section>
 
         <section class="our-secret-sauce">
@@ -130,106 +126,148 @@
                     <h3>Our Secret Sauce</h3>
                     <span class="section-subtitle">Typically, a customer starts with one recruiter as a test and ramps up as we prove success</span>
                 </div>
-
                 <div class="our-secret-sauce__links">
-                    <ul class="our-secret-sauce__links_item">
-                        <a href="#" class="our-secret-sauce__links_link">
-                            <img src="./assets/main-content/image-place.png">
-                        </a>
-                        <a href="#" class="our-secret-sauce__links_link">
-                            <img src="./assets/main-content/image-reputation.png">
-                        </a>
-                        <a href="#" class="our-secret-sauce__links_link">
-                            <img src="./assets/main-content/image-famous.png">
-                        </a>
+                    <ul class="our-secret-sauce__links_list">
+                        <li class="our-secret-sauce__links_item">
+                            <figure>
+                                    <img src="./assets/main-content/image-place.png" alt="">
+                                    <figcaption>
+                                        <h4>Staying Local</h4>
+                                        <span>Offshoring can be harmful to your brand image, which is why we belive in onshoring and
+                                            nearshoring. Our recruiters are entirely located across the America, which also means the same timezone and workday.
+                                        </span>
+                                    </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                           <figure>
+                                <img src="./assets/main-content/image-reputation.png" alt="">
+                                <figcaption>
+                                    <h4>Protect your Brand Image</h4>
+                                    <span>
+                                        Use recruiters who speak and write fluent English, can build relationships with top
+                                        talent, and are capable of creative sourcing for complex roles.
+                                    </span>
+                                </figcaption>
+                           </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./assets/main-content/image-famous.png" alt="">
+                                <figcaption>
+                                    <h4>No Substitute</h4>
+                                    <span>Recruiting only requires a laptop and a phone, but there is no substitute for good communication skills and grit.</span>
+                                </figcaption>
+                            </figure>
+                        </li>
                     </ul>
-
-                    <div class="our-secret-sauce__content">
-                        <div class="our-secret-sauce__content_title">
-                            <h4>Staying Local</h4>
-                            <span>Offshoring can be harmful to your brand image, which is why we belive in onshoring and
-                                nearshoring. Our recruiters are entirely located across the America, which also means the same timezone and workday.</span>
-                            <h4>Protect your Brand Image</h4>
-                            <span>Use recruiters who speak and write fluent English, can build relationships with top
-                                talent, and are capable of creative sourcing for complex roles.</span>
-                            <h4>No Substitute</h4>
-                            <span>Recruiting only requires a laptop and a phone, but there is no substitute for good communication skills and grit.</span>
-                        </div>
-                        <div class="our-secret-sauce__content_img">
-                            <img src="./assets/main-content/img-pointer.svg" alt="pointer">
-                        </div>
-                        <div class="our-secret-sauce__content_btn">
-                            <a href="#" class="btn">Get started</a>
-                        </div>
-                    </div>
+                </div>
+                <div class="our-secret-sauce__content_btn">
+                    <a href="#" class="btn">Get started</a>
                 </div>
             </div>
         </section>
 
         <section class="founder's-message">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Founder's Message</h2>
-                    <span class="section-subtitle">This is the recruitment company I wish existed when I was leading
-                        talent for tech startups. Sourcing, engaging, and hiring top talent in tight labor markets is
-                        not for the faint of heart.</span>
-                    <span class="section-content">
-                        <p>
-                        <h6><b>John Doe Founder</b></h6>
-                        </p>
-                        <p>
-                        <h6><b>Awarded Ere.net award for top recruiting department in world</b></h6>
-                        </p>
-                    </span>
-                </div>
+            <div class="founders-wrapper">
                 <div class="section-img__group">
                     <img src="./assets/main-content/img-founder.png" alt="founder">
-                    <img src="./assets/main-content/img-customers-founder-message.png" alt="customers">
+                </div>
+                <div class="founders-content">
+                    <div class="founders-title">
+                        <h2>Founder's Message</h2>
+                        <span class="founders-subtitle">This is the recruitment company I wish existed when I was leading
+                            talent for tech startups. Sourcing, engaging, and hiring top talent in tight labor markets is
+                            not for the faint of heart.</span>
+                    </div>
+                    <div class="funders-signature">
+                       <span>John Doe <br/>Founder</span>
+                       <span>Awarded Ere.net award for top recruiting department in world</span>    
+                    </div>
                 </div>
             </div>
         </section>
-
+        <div class="middel-banner">
+            <img src="./assets/main-content/img-customers-founder-message.png" alt="customers">
+        </div>
         <section class="our-team">
-            <div class="container">
+            <div class="our-team__wrapper">
                 <div class="section-title">
                     <h3>Our Team</h3>
                     <span class="section-subtitle">Do you require some help for your project: Conception workshop,
                         prototyping, marketing strategy, landing page, Ux/UI?</span>
                 </div>
-                <div class="section-img__groop">
-                    <img src="./assets/main-content/img-oval.jpg" alt="oval">
+                <img src="./assets/main-content/img-oval.jpg" alt="oval">
+                <div class="our-team__centered-img">
                     <img src="./assets/main-content/img-illustration-team.png" alt="our-team">
                 </div>
-                <div class="section-content">
-                    <div class="section-content__Max">
-                        <h5>Max</h5>
+                <div class="our-team__member_pos">
+                    <div class="our-team__member">
+                        <div class="buble-wrapper">
+                            <span class="buble">6+ YOE, hired 5 C level executives
+                                with 5 months for a firm
+                            </span>
+                        </div>
                         <img src="./assets/main-content/img-avator-max.png" alt="Avator Max">
-                        <span class="section-subtitle">6+ YOE, hired 5 C level executives
-                            with 5 months for a firm</span>
-                    </div>
-                    <div class="section-content__Nina">
-                        <h5>Nina</h5>
-                        <img src="./assets/main-content/img-avator-nina.png" alt="Avator Nina">
-                        <span class="section-subtitle">11+ Years of EXperience and 7+
-                            in Silicons Valley</span>
-                    </div>
-                    <div class="section-content__Freddy">
-                        <h5>Freddy</h5>
-                        <img src="./assets/main-content/img-avator-freddy.png" alt="Avator Freddy">
-                        <span class="section-subtitle">10+ YOE with MNCs and startups</span>
-                    </div>
-                    <div class="section-content__Tom">
-                        <h5>Tom</h5>
-                        <img src="./assets/main-content/img-avator-tom.png" alt="Avator Tom">
-                        <span class="section-subtitle">7+ YOE, experience with recruiting
-                            all levels across a firm</span>
-                    </div>
-                    <div class="section-content__Priscilla">
-                        <h5>Priscilla</h5>
-                        <img src="./assets/main-content/img-avator-pris.png" alt="Avator Priscilla">
-                        <span class="section-subtitle">Max - 10+ years of tech recruiting
-                            for VC funded startups</span>
-                    </div>
+                        <span>Max</span>
+                    </div>  
+                </div>  
+                <div class="our-team__member_pos">
+                    <div class="our-team__member">
+                        <div class="buble-wrapper">
+                            <span class="buble">6+ YOE, hired 5 C level executives
+                                with 5 months for a firm
+                            </span>
+                        </div>
+                        <img src="./assets/main-content/img-avator-max.png" alt="Avator Max">
+                        <span>Max</span>
+                    </div>  
+                    
+                </div>
+                <div class="our-team__member_pos">
+                    <div class="our-team__member">
+                        <div class="buble-wrapper">
+                            <span class="buble">6+ YOE, hired 5 C level executives
+                                with 5 months for a firm
+                            </span>
+                        </div>
+                        <img src="./assets/main-content/img-avator-max.png" alt="Avator Max">
+                        <span>Max</span>
+                    </div>  
+                </div>
+                <div class="our-team__member_pos">
+                    <div class="our-team__member">
+                        <div class="buble-wrapper">
+                            <span class="buble">6+ YOE, hired 5 C level executives
+                                with 5 months for a firm
+                            </span>
+                        </div>
+                        <img src="./assets/main-content/img-avator-max.png" alt="Avator Max">
+                        <span>Max</span>
+                    </div>  
+                </div>
+                <div class="our-team__member_pos">
+                    <div class="our-team__member">
+                        <div class="buble-wrapper">
+                            <span class="buble">6+ YOE, hired 5 C level executives
+                                with 5 months for a firm
+                            </span>
+                        </div>
+                        <img src="./assets/main-content/img-avator-max.png" alt="Avator Max">
+                        <span>Max</span>
+                    </div>  
+                </div>
+                <div class="our-team__member_pos">
+                    <div class="our-team__member">
+                        <div class="buble-wrapper">
+                            <span class="buble">6+ YOE, hired 5 C level executives
+                                with 5 months for a firm
+                            </span>
+                        </div>
+                        <img src="./assets/main-content/img-avator-max.png" alt="Avator Max">
+                        <span>Max</span>
+                    </div>  
+                
                 </div>
             </div>
         </section>
@@ -244,49 +282,82 @@
                 <div class="section-content">
                     <nav class="our-success-stories__nav">
                         <ul class="our-success-stories__nav_list">
-                            <li class="our-success-stories__nav_list_item"><h4>160%</h4></li>
-                            <span class="our-success-stories__text_under_item">Hired 14 engineering roles for a VC funded
-                            tech company in Q2 2019, including a Lead Data Scientist, Director of Devops, and Python
-                            Engineers. </span>
-                            <li class="our-success-stories__nav_list_item"><h4>200%</h4></li>
-                            <span class="our-success-stories__text_under_item">Hired 5 full stack engineers within 60 days
-                            for a hyper growth tech company. </span>
-                            <li class="our-success-stories__nav_list_item"><h4>230%</h4></li>
-                            <span class="our-success-stories__text_under_item">We came in late on a complex diversity
-                            leadership search and hired the winning candidate within 6 weeks. </span>
+                            <li class="our-success-stories__nav_list_item">
+                                <h4>160%</h4>
+                                <span class="our-success-stories__text_under_item">Hired 14 engineering roles for a VC funded
+                                    tech company in Q2 2019, including a Lead Data Scientist, Director of Devops, and Python
+                                    Engineers. 
+                                </span>
+                            </li>
+                            
+                            <li class="our-success-stories__nav_list_item">
+                                <h4>200%</h4>
+                                <span class="our-success-stories__text_under_item">Hired 5 full stack engineers within 60 days
+                                    for a hyper growth tech company. </span>
+                            </li>
+                            <li class="our-success-stories__nav_list_item">
+                                <h4>230%</h4>
+                                <span class="our-success-stories__text_under_item">We came in late on a complex diversity
+                                    leadership search and hired the winning candidate within 6 weeks. 
+                                </span>
+                            </li>
                         </ul>
                     </nav>
-                    <span class="section-content__img">
+                    <div class="section-content__img">
                         <img src="./assets/main-content/our-success-graph.png" alt="Graph Of Success">
-                        <span class="our-success-stories__text1_in_img"><p><h4>160%</h4></p>Less time to hire complex diverse leadership when came in late for a company </span>
-                        <span class="our-success-stories__text2_in_img"><p><h4>200%</h4></p>ROI on recruitment for a start-up </span>
-                        <span class="our-success-stories__text3_in_img"><p><h4>230%</h4></p>Increase YoY in company size and engagements </span>
-                    </span>
+                        <div class="our-success-stories__text1_in_img">
+                            <h4>160%</h4>
+                            Less time to hire complex diverse leadership when came in late for a company 
+                        </div>
+                        <div class="our-success-stories__text2_in_img">
+                            <h4>200%</h4>
+                            ROI on recruitment for a start-up 
+                        </div>
+                        <div class="our-success-stories__text3_in_img">
+                            <h4>230%</h4>
+                            Increase YoY in company size and engagements 
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-
-    <div class="container">
         <div class="talk-to-our-expert">
-            <div class="talk-to-our-expert__content">
-              <h2 class="talk-to-our-expert__content_title">Talk To Our Expert</h2>
-              <span class="talk-to-our-expert__content_subtitle">The best return on investment for your hiring dollars</span>
-              <span class="talk-to-our-expert__content_subtitle_under">Our experts will examine your requirements and provide suggestions for how best to improve, and which additional services you may benefit from. All of our experts are highly skilled and are proud to offer their expertise alongside great customer support so you can always be sure that you are getting the best advice.
-                <p> We take your privacy very seriously and will never share your personal details with other organisations or individuals.</p></span>
-                <a href="#" class="btn">Contuct Us</a>
+            <div>
+                <h2 class="talk-to-our-expert__content_title">Talk To Our Expert</h2>
+                <span class="talk-to-our-expert__content_subtitle">The best return on investment for your hiring dollars</span>
             </div>
-            <div class="talk-to-our-expert__phorm">
-                <h2 class="talk-to-our-expert__phorm_title">CONTACT US</h2>
+            <div class="container">
                 <form method="POST" action="https://www.google.com/">
-                    <p><input type="text" name="Johnny-Holland" required><label for="name">Johnny Holland</label></p>
-                    <p><input type="email" name="ksimpson@topicshots.com" required><label for="email">ksimpson@topicshots.com</label></p>
-                    <p><input type="text" name="company" required></p>
-                    <p><input type="text" name="interested-industry" required></p>
-                    <p><input type="text" name="description" required></p>
+                    <div class="talk-to-our-expert__phorm">
+                    <div class="talk-to-our-expert__content">
+                        <div class="talk-to-our-expert__content_subtitle_under">Our experts will examine your requirements and provide suggestions for how best to improve, and which additional services you may benefit from. All of our experts are highly skilled and are proud to offer their expertise alongside great customer support so you can always be sure that you are getting the best advice.
+                          <p> We take your privacy very seriously and will never share your personal details with other organisations or individuals.</p></div>
+                          <button type="submit" class="btn">Contuct Us</button>
+                      </div>
+                      <div class="form-fields">
+                        <h2 class="talk-to-our-expert__phorm_title">CONTACT US</h2>
+                            <p>
+                                <input type="text" name="Johnny-Holland" required placeholder="Johnny Holland">
+                            </p>
+                            <p>
+                                <input type="email" name="ksimpson@topicshots.com" required placeholder="ksimpson@topicshots.com">
+                            </p>
+                            <p>
+                                <input type="text" name="company" required placeholder="Company*">
+                            </p>
+                            <p>
+                                <select>
+                                    <option>Interested Industry</option>
+                                </select>
+                            </p>
+                            <p>
+                                <textarea  name="description" required placeholder="Description*"></textarea>
+                            </p>
+                        </div>
+                    </div>
                 </form>
             </div>
-        </div>
     </div>
 
     <footer class="footer">
@@ -308,8 +379,10 @@
                       <li class="footer__links_list_item">Achievements</li>
                     </ul>
                     <ul class="footer__links_and_img_list">
-                      <li class="footer__links_list_item footer__links_list_item--primary"><h4>Follow Us</h4></li>
-                      <img src="./assets/footer/img-follow-us.png" alt="Follow Us">
+                      <li class="footer__links_list_item footer__links_list_item--primary">
+                          <h4>Follow Us</h4>
+                          <img src="./assets/footer/img-follow-us.png" alt="Follow Us">
+                      </li>
                     </ul>
                   </div>
                 </div>
