@@ -4,11 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Rubik:wght@500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Rubik:wght@500&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -17,31 +15,24 @@
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <div class="header__logo_img">
-                    <img src="./logo/Logo.png" alt="Icon">
+                <div class="header-content">
+                    <div class="header__logo_img">
+                        <img src="./logo/Logo.png" alt="Icon">
+                    </div>
+                    <nav class="header__nav">
+                        <a class="nav__link" href="#">About</a>
+                        <a class="nav__link" href="#">Gallery</a>
+                        <a class="nav__link" href="#">Pricing</a>
+                        <a class="nav__link" href="#">FAQ</a>
+                        <a class="nav__link" href="#">Benefits</a>
+                    </nav>
                 </div>
-                <nav class="header__nav">
-                    <ul class="header__nav_list">
-                        <li class="header__nav_list_item">
-                            <a href="#">About</a>
-                        </li>
-                        <li class="header__nav_list_item">
-                            <a href="#">Gallery</a>
-                        </li>
-                        <li class="header__nav_list_item">
-                            <a href="#">Pricing</a>
-                        </li>
-                        <li class="header__nav_list_item">
-                            <a href="#">FAQ</a>
-                        </li>
-                        <li class="header__nav_list_item">
-                            <a href="#">Benefits</a>
-                        </li>
-                    </ul>
-                    <!-- @TODO Must be wrapper  -->
-                    <a href="#" class="btn btn--outlined">Sign In</a>
-                    <a href="#" class="btn btn--contained">Sign Up</a>
-                </nav>
+                <div class="header__btn">
+                    <nav class="btn__nav">
+                        <a href="#" class="btn btn--outlined">Sign In</a>
+                        <a href="#" class="btn btn--contained">Sign Up</a>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -51,56 +42,55 @@
             <div class="container">
                 <div class="main-content">
                     <div class="main-content__text">
-                        <div class="section__title">
+                        <div class="main-content__title">
                             <h1>Many reasons to get up and start to get back in the business</h1>
-                            <span class="section-subtitle">The harder you work for something, the greater you’ll feel
+                            <span class="main-content-subtitle">The harder you work for something, the greater you’ll feel
                                 when you achieve it.</span>
                         </div>
-                        <!-- Must be wrapper -->
-                        <a href="#" class="btn btn--contained">Learn More</a>
-                        <a href="#" class="btn btn--outlined">Demo</a>
-                    </div>
-                    <!-- Remvoe it  -->
-                    <div class="container">
-                        <div class="main-content___preview">
-                            <div class="main-content___preview_img">
+                        <div class="main-content__btn">
+                            <div class="main-content__btn_contained">
+                                <a href="#" class="btn btn--contained">Learn More</a>
+                            </div>
+                            <div class="main-content__btn_outlined">
+                                <a href="#" class="btn btn--outlined">Demo</a>
+                            </div>
+                        </div>
+                        <div class="main-content__preview">
+                            <div class="main-content__preview_img">
                                 <img src="./main-content/play-purple-img.png" alt="Play">
                             </div>
-                            <span class="main-content___preview_text">The harder you work for something, the greater
-                                you’ll feel when you achieve it.</span>
-                            <a href="#">Watch preview</a>
-                        </div>
-                        <div class="main-content__img">
-                            <div class="main-content__img_item">
-                                <img src="../assets/main-content/" alt="Man">
-                            </div>
-                            <div class="main-content__img_item">
-                                <img src="./main-content/group-of-stars.png" alt="Stars">
+                            <div class="main-content__preview_text">
+                                <div class="main-content__preview_title">The harder you work for something, the greater you’ll feel when you achieve it.</div>
+                                <p><a href="#">Watch preview</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container">
-                <!--All images must be wrapped tag a  -->
+                <div class="main-content__img">
+                    <img src="./main-content/Frame-stars-man.png" alt="Man">
+                </div>
+            </div>
+            <div class="container">
                 <div class="main-content__group_img">
                     <div class="main-content__group_img_item">
-                        <img src="./main-content/profit-well-img.svg" alt="Profit">
+                        <a href="#"><img src="./main-content/profit-well-img.svg" alt="Profit"></a>
                     </div>
                     <div class="main-content__group_img_item">
-                        <img src="./main-content/appcuess-img.svg" alt="Appcuess">
+                        <a href="#"><img src="./main-content/appcuess-img.svg" alt="Appcuess"></a>
                     </div>
                     <div class="main-content__group_img_item">
-                        <img src="./main-content/ship-bob-img.svg" alt="Ship">
+                        <a href="#"><img src="./main-content/ship-bob-img.svg" alt="Ship"></a>
                     </div>
                     <div class="main-content__group_img_item">
-                        <img src="./main-content/bench-img.svg" alt="Bench">
+                        <a href="#"><img src="./main-content/bench-img.svg" alt="Bench"></a>
                     </div>
                     <div class="main-content__group_img_item">
-                        <img src="./main-content/subbly-img.svg" alt="Subbly">
+                        <a href="#"><img src="./main-content/subbly-img.svg" alt="Subbly"></a>
                     </div>
                     <div class="main-content__group_img_item">
-                        <img src="./main-content/demio-img.svg" alt="Demio">
+                        <a href="#"><img src="./main-content/demio-img.svg" alt="Demio"></a>
                     </div>
                 </div>
             </div>
@@ -108,14 +98,13 @@
 
         <section class="your-choice">
             <div class="container">
-                <!-- wer can make all title with one class for reuse  -->
                 <div class="your-choice__title">
-                    <h3>Your choice</h3>
+                    <h2>Your choice</h2>
                     <span class="section-subtitle">There are many reasons to get down and start to get depressed about
                         your situation.</span>
                 </div>
                 <div class="your-choice__content_wrapper">
-                    <div class="your-choice__points">
+                    <div class="your-choice__points_one">
                         <div class="your-choice__point">
                             <div class="your-choice-content__img">
                                 <img src="./main-content/Flip-horizontal.png" alt="Flip">
@@ -124,16 +113,6 @@
                                 <h5>Ecstatic elegance</h5>
                                 <span class="your-choice__point_subtitle">Article nor prepare chicken you him now. Shy
                                     merits say advice ten before lovers innate add.</span>
-                            </div>
-                        </div>
-                        <div class="your-choice__point">
-                            <div class="your-choice-content__img">
-                                <img src="./main-content/thunder-move.png" alt="Thunder">
-                            </div>
-                            <div class="your-choice__point_title">
-                                <h5>Open game</h5>
-                                <span class="your-choice__point_subtitle">Shy merits say advice ten before lovers innate
-                                    add. She cordially behaviour can attempted estimable.</span>
                             </div>
                         </div>
                         <div class="your-choice__point">
@@ -148,22 +127,34 @@
                         </div>
                         <div class="your-choice__point">
                             <div class="your-choice-content__img">
-                                <img src="./main-content/Attachment1.png" alt="Attach">
-                            </div>
-                            <div class="your-choice__point_title">
-                                <h5>Endeavor</h5>
-                                <span class="your-choice__point_subtitle">Improve ashamed married expense bed her
-                                    comfort pursuit mrs. Four time took ye your as fail lady.</span>
-                            </div>
-                        </div>
-                        <div class="your-choice__point">
-                            <div class="your-choice-content__img">
                                 <img src="./main-content/LTE.png" alt="LTE">
                             </div>
                             <div class="your-choice__point_title">
                                 <h5>Possible procured trifling</h5>
                                 <span class="your-choice__point_subtitle">We me rent been part what. An concluded
                                     sportsman offending so provision mr education.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="your-choice__points_two">
+                        <div class="your-choice__point">
+                            <div class="your-choice-content__img">
+                                <img src="./main-content/thunder-move.png" alt="Thunder">
+                            </div>
+                            <div class="your-choice__point_title">
+                                <h5>Open game</h5>
+                                <span class="your-choice__point_subtitle">Shy merits say advice ten before lovers innate
+                                    add. She cordially behaviour can attempted estimable.</span>
+                            </div>
+                        </div>
+                        <div class="your-choice__point">
+                            <div class="your-choice-content__img">
+                                <img src="./main-content/Attachment1.png" alt="Attach">
+                            </div>
+                            <div class="your-choice__point_title">
+                                <h5>Endeavor</h5>
+                                <span class="your-choice__point_subtitle">Improve ashamed married expense bed her
+                                    comfort pursuit mrs. Four time took ye your as fail lady.</span>
                             </div>
                         </div>
                         <div class="your-choice__point">
@@ -183,122 +174,119 @@
 
         <section class="increase-your-business-traffic">
             <div class="container">
-                <div class="increase-your-business-traffic__title">
-                    <h2>Increase your business traffic</h2>
-                    <span class="section-subtitle">We are commited to processing the information in order to contact you
-                        and talk about your prodject.</span>
-                </div>
-                <a href="#" class="btn btn--contained">Learn more</a>
-            </div>
-            <!-- It's one image -->
-            <div class="increase-your-business-traffic__images_wrapper">
-                <div class="increase-your-business-traffic__img">
-                    <img src="./main-content/owerview.jpg" alt="Owerview">
-                </div>
-                <div class="increase-your-business-traffic__img">
-                    <img src="./main-content/photo.jpg" alt="Book">
-                </div>
-                <div class="increase-your-business-traffic__img">
-                    <img src="./main-content/rectangle.png" alt="Rectangle">
-                </div>
-                <div class="increase-your-business-traffic__img">
-                    <img src="./main-content/path.png" alt="Path">
+                <div class="increase-your-business-traffic__content"> 
+                    <div class="increase-your-business-traffic__text">
+                        <div class="section__title">
+                            <h2>Increase your business traffic</h2>
+                            <span class="section-subtitle">We are commited to processing the information in order to contact you
+                                and talk about your prodject.</span>
+                        </div>
+                        <a href="#" class="btn btn--contained">Learn more</a>
+                    </div>
+                    <div class="increase-your-business-traffic__img">
+                        <img src="./main-content/group-graf-book.png" alt="Owerview">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="3-simple-ways">
+        <section class="simple-ways">
             <div class="container">
-                <div class="3-simple-ways__title">
-                    <h3>3 Simple Ways To Save A Bunch Of Money When Buying A New Computer</h3>
-                    <span class="section-subtitle">Fully castomizable and neatly organized components will help you work
-                        faster without limiting creative freedom.</span>
-                </div>
-                <div class="3-simple-ways__text">
-                    <div class="3-simple-ways__text-item">
-                        <h3>100+</h3>
-                        <span class="section-subtitle">5 Reasons To Putchase Desktop Computers</span>
+                <div class="simple-ways__content">
+                    <div class="simple-ways__title">
+                        <h3>3 Simple Ways To Save A Bunch Of Money When Buying A New Computer</h3>
+                    <div class="simple-ways-subtitle">Fully castomizable and neatly organized 
+                        components will help you work faster without limiting creative freedom.</div>
                     </div>
-                    <div class="3-simple-ways__text-item">
+                </div>
+                <div class="simple-ways__text">
+                    <div class="simple-ways__text-item">
+                        <h3>100+</h3>
+                        <span class="item-subtitle">5 Reasons To Putchase Desktop Computers</span>
+                    </div>
+                    <div class="simple-ways__text-item">
                         <h3>43,000+</h3>
-                        <span class="section-subtitle">3 Simple Ways To Save A Bunch Of Money When Buying A New
+                        <span class="item-subtitle">3 Simple Ways To Save A Bunch Of Money When Buying A New
                             Computer</span>
                     </div>
-                    <div class="3-simple-ways__text-item">
+                    <div class="simple-ways__text-item">
                         <h3>30+</h3>
-                        <span class="section-subtitle">A Discount Toner Cartridge Is Better Than Ever And You Will Save
+                        <span class="item-subtitle">A Discount Toner Cartridge Is Better Than Ever And You Will Save
                             50 Or More</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="create-your-next-project">
+        <section class="create-project">
             <div class="container">
-                <div class="create-your-next-project__title">
-                    <h3>Create your next project with startap framework</h3>
+                <div class="create-project__content">
+                    <div class="create-project__title">
+                        <h2>Create your next project with startap framework</h2>
+                    </div>
+                    <a href="#" class="btn btn--contained">Get Started</a>
+                    <div class="create-project__img">
+                        <img src="./main-content/Frame-dots.png" alt="Dot">
+                    </div>
                 </div>
-                <a href="#" class="btn btn--contained">Get Started</a>
             </div>
         </section>
 
-        <figure>
-            <img src="./main-content/dottt.png" alt="Dot">
-        </figure>
-
         <section class="invest-property">
             <div class="container">
-                <div class="invest-property__title">
-                    <h2>Invest property for better business</h2>
-                    <span class="section-subtitle">We are commited to processing the information in order to contact you
-                        and talk about your project. We are committed to processing the information. </span>
-                </div>
-                <a href="#" class="btn btn--contained">Learn more</a>
-            </div>
-            <div class="invest-property__images_wrapper">
-                <div class="invest-property__img">
-                    <img src="./main-content/linesAndText.png" alt="Lines">
-                </div>
-                <div class="invest-property__img">
-                    <img src="./main-content/6month.png" alt="Data">
-                </div>
-                <div class="invest-property__img">
-                    <img src="./main-content/rectangle.png" alt="Rectangle">
-                </div>
-                <div class="increase-your-business-traffic__img">
-                    <img src="./main-content/path.png" alt="Arrow">
+                <div class="invest-property__content">
+                    <div class="invest-property__text">
+                        <div class="invest-property__title">
+                            <h2>Invest property for better business</h2>
+                            <span class="section-subtitle">We are commited to processing the information in order to contact you
+                                and talk about your project. We are committed to processing the information. </span>
+                        </div>
+                        <a href="#" class="btn btn--contained">Learn more</a>
+                    </div>
+                    <div class="images-group__wrapper">
+                        <div class="images-group__item">
+                            <img src="./main-content/Group-lines.png" alt="Dot">
+                        </div>
+                        <div class="images-group__item">
+                            <img src="./main-content/dots-map.png" alt="Dot">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="help-finding">
             <div class="container">
-                <div class="help-finding__img">
-                    <img src="./main-content/bitmap.jpg" alt="People">
-                </div>
-                <div class="help-finding__text">
-                    <div class="help-finding__title">
-                        <h4>Help Finding Information Online</h4>
-                        <span class="section-subtitle">Fully customizable and neatly organized components will help you
-                            work faster without limiting creative freedom.</span>
+                <div class="help-finding__content">
+                    <div class="help-finding__img">
+                        <img src="./main-content/Group-people.png" alt="People">
                     </div>
-                    <div class="help-finding__content_wrapper">
-                        <div class="content__img">
-                            <img src="./main-content/Swiss-knife.png" alt="Swiss">
+                    <div class="help-finding__text">
+                        <div class="help-finding__title">
+                            <h4>Help Finding Information Online</h4>
+                            <span class="section-subtitle">Fully customizable and neatly organized components will help you
+                                work faster without limiting creative freedom.</span>
                         </div>
-                        <!-- wrapp in div with class img and title -->
-                        <div class="content__title">
-                            <h5>Feature One</h5>
-                            <span class="content-subtitle">Fully customizable and neatly organized components will help
-                                you work faster</span>
-                        </div>
-                        <div class="content__img">
-                            <img src="./main-content/LTE.png" alt="LTE">
-                        </div>
-                        <div class="content__title">
-                            <h5>Feature Two</h5>
-                            <span class="content-subtitle">Fully customizable and neatly organized components will help
-                                you work faster</span>
+                        <div class="features__wrapper">
+                            <div class="feature-one__content">
+                                <div class="content__img">
+                                    <img src="./main-content/Swiss-knife.png" alt="Swiss">
+                                </div>
+                                <div class="content__title">
+                                    <h5>Feature One</h5>
+                                    <span class="content-subtitle">Fully customizable and neatly organized components will help you
+                                        work faster</span>
+                                </div>
+                            </div>
+                            <div class="feature-two__content">
+                                <div class="content__img">
+                                    <img src="./main-content/LTE.png" alt="LTE">
+                                </div>
+                                <div class="content__title">
+                                    <h5>Feature Two</h5>
+                                    <span class="content-subtitle">Fully customizable and neatly organized components will help you work faster</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -308,8 +296,8 @@
         <div class="container">
             <div class="get-down">
                 <div class="get-down__content">
-                    <h2 class="get-down__content_title">There are many reasons to get down</h2>
-                    <span class="join-our-news__content_subtitle">There are many reasons to get down and start to get
+                    <h2 class="section__title">There are many reasons to get down</h2>
+                    <span class="section__subtitle">There are many reasons to get down and start to get
                         depressed about your situation.</span>
                 </div>
                 <form method="POST" action="https://www.google.com/">
@@ -323,61 +311,64 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__content">
-                    <!--footer__content_wrapper remove it  -->
-                    <div class="footer__content_wrapper">
-                        <div class="footer__title">
+                    <div class="footer-panel">
+                        <div class="footer-panel__title">
                             <h3>ARShakir</h3>
                         </div>
+                        <ul class="footer-panel__links">
+                            <li class="footer-panel__links_item">
+                                <a href="#" class="footer-panel__links_link">
+                                    <img src="./main-content/Google.png" alt="Google">
+                                </a>
+                            </li>
+                            <li class="footer-panel__links_item">
+                                <a href="#" class="footer-panel__links_link">
+                                    <img src="./main-content/Twitter.png" alt="Twitter">
+                                </a>
+                            </li>
+                            <li class="footer-panel__links_item">
+                                <a href="#" class="footer-panel__links_link">
+                                    <img src="./main-content/Facebook.png" alt="Facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-                        <div class="bottom-panel">
-                            <ul class="bottom-panel__links">
-                                <li class="bottom-panel__links_item">
-                                    <a href="#" class="bottom-panel__links_link">
-                                        <img src="./main-content/Google.png" alt="Google">
-                                    </a>
-                                </li>
-                                <li class="bottom-panel__links_item">
-                                    <a href="#" class="bottom-panel__links_link">
-                                        <img src="./main-content/Twitter.png" alt="Twitter">
-                                    </a>
-                                </li>
-                                <li class="bottom-panel__links_item">
-                                    <a href="#" class="bottom-panel__links_link">
-                                        <img src="./main-content/Facebook.png" alt="Facebook">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="footer__links">
-                            <ul class="footer__links_list">
-                                <li class="footer__links_list_item footer__links_list_item--primary">First</li>
-                                <li class="footer__links_list_item">First page</li>
-                                <li class="footer__links_list_item">Second page</li>
-                                <li class="footer__links_list_item">Third page</li>
-                                <li class="footer__links_list_item">Fourth page</li>
-                            </ul>
-                            <ul class="footer__links_list">
-                                <li class="footer__links_list_item footer__links_list_item--primary">Second</li>
-                                <li class="footer__links_list_item">First page</li>
-                                <li class="footer__links_list_item">Second page</li>
-                                <li class="footer__links_list_item">Third page</li>
-                                <li class="footer__links_list_item">Fourth page</li>
-                            </ul>
-                            <ul class="footer__links_list">
-                                <li class="footer__links_list_item footer__links_list_item--primary">Third</li>
-                                <li class="footer__links_list_item">First page</li>
-                                <li class="footer__links_list_item">Second page</li>
-                                <li class="footer__links_list_item">Third page</li>
-                                <li class="footer__links_list_item">Fourth page</li>
-                            </ul>
-                            <ul class="footer__links_list">
-                                <li class="footer__links_list_item footer__links_list_item--primary">Fourth</li>
-                                <li class="footer__links_list_item">First page</li>
-                                <li class="footer__links_list_item">Second page</li>
-                                <li class="footer__links_list_item">Third page</li>
-                                <li class="footer__links_list_item">Fourth page</li>
-                            </ul>
+                    <div class="footer__links">
+                        <ul class="footer__links_list">
+                            <li class="footer__links_list_item footer__links_list_item--primary">First</li>
+                            <li class="footer__links_list_item">First page</li>
+                            <li class="footer__links_list_item">Second page</li>
+                            <li class="footer__links_list_item">Third page</li>
+                            <li class="footer__links_list_item">Fourth page</li>
+                        </ul>
+                        <ul class="footer__links_list">
+                            <li class="footer__links_list_item footer__links_list_item--primary">Second</li>
+                            <li class="footer__links_list_item">First page</li>
+                            <li class="footer__links_list_item">Second page</li>
+                            <li class="footer__links_list_item">Third page</li>
+                            <li class="footer__links_list_item">Fourth page</li>
+                        </ul>
+                        <ul class="footer__links_list">
+                            <li class="footer__links_list_item footer__links_list_item--primary">Third</li>
+                            <li class="footer__links_list_item">First page</li>
+                            <li class="footer__links_list_item">Second page</li>
+                            <li class="footer__links_list_item">Third page</li>
+                            <li class="footer__links_list_item">Fourth page</li>
+                        </ul>
+                        <ul class="footer__links_list">
+                            <li class="footer__links_list_item footer__links_list_item--primary">Fourth</li>
+                            <li class="footer__links_list_item">First page</li>
+                            <li class="footer__links_list_item">Second page</li>
+                            <li class="footer__links_list_item">Third page</li>
+                            <li class="footer__links_list_item">Fourth page</li>
+                        </ul>
+                    </div>
+                    <div class="bottom-panel">
+                        <div class="bottom-panel__text">
+                            <span><h6>© Copyrights 2021</h6></span>
+                            <span><h6>Privacy policy</h6></span>
+                            <span><h6>Terms of service</h6></span>
                         </div>
                     </div>
                 </div>
@@ -387,3 +378,11 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
